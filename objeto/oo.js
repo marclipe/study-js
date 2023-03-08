@@ -14,3 +14,8 @@ objeto = {
 }
 
 objeto.prrocessamento()
+
+
+//Pricipios importantes 
+// 1- Abstração 
+// 2- Encapsulamento 
