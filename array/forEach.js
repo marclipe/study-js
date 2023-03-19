@@ -12,5 +12,6 @@ aprovados.forEach((nome) => console.log(nome));
 //arrow function com indice
 // aprovados.forEach((indice) => console.log(indice));
 
+//Armazenar uma função em uma variável
 const exibirAprovados = (aprovado) => console.log(aprovado);
 aprovados.forEach(exibirAprovados);
