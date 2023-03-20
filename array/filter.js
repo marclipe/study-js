@@ -21,4 +21,8 @@ const fragil = produto => produto.fragil
 //     return produto.fragil
 // }
 
-console.log(produtos.filter(caro).filter(fragil))
+const myNote = produto => produto.nome === 'Notebook'
+
+console.log(produtos.filter(caro).filter(fragil).filter(myNote))
+
+// console.log(produtos.filter(myNote))
