@@ -22,7 +22,7 @@ const [x, , y] = [1, 2, 3];
 console.log(x, y)
 
 //Desestruturando um objeto
-const {idade, nome} = {nome: 'Ana', idade: 9}
-console.log(idade, nome)
+const {idade: i, nome} = {nome: 'Ana', idade: 9}
+console.log(i, nome)
 
 
