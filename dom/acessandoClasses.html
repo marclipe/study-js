@@ -12,7 +12,13 @@
         Classes
     </div>
     <script>
-        // ...
+        const classes = document.querySelector('div').classList
+        classes.add('destaque')
+        classes.remove('destaque')
+        classes.toggle('destaque')
+        console.log(classes.contains('destaque')) //true
+        console.log(classes.length)//1
+        classes.toggle('destaque')
     </script>
 </body>
 
