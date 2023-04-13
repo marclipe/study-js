@@ -9,7 +9,36 @@
 
 <body class='conteudo exercicio'>
     <script>
-        document.getElementById('primeiro').classList.add('destaque')
+        const body = document.querySelector('body')
+
+        //criei o elemento 
+        const div1 = document.createElement('div')
+        div1.classList.add('destaque')
+        div1.innerHTML = 'Primeiro'
+
+        //Criando uma div
+        const div2 = document.createElement('div')
+        div2.setAttribute('wm-atributo', 'valor')
+        div2.innerHTML = 'Segundo'
+
+        //Criando um paragrafo
+        const paragrafo = document.createElement('p')
+        paragrafo.innerHTML = 'Terceiro'
+        const div3 = document.createElement('div')
+        div3.appendChild(paragrafo)
+
+        //Preciso colocar no body para aparecer
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+        const texto = document.createTextNode('Antes...')
+        div3.insertBefore(texto, div3.childNodes[0])
+
+        //Clonando div
+        const div4 = div3.cloneNode(true)
+        body.appendChild(div4)
+        body.removeChild(div3) 
     </script>
 </body>
 

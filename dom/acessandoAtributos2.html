@@ -17,7 +17,17 @@
         </ul>
     </div>
     <script>
-        // ...
+        const lista = document.querySelector('div ul[destino="escritório"]')
+        console.log('Elemento "ul"..........')
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.destino) //undefined
+        console.log('getAttribute', lista.getAttribute('destino')) //passando com atributo eu tenho acesso a prop personalizada
+
+        console.log('hasAttribute', lista.hasAttribute('destino')) //true
+        lista.setAttribute('empresa', 'destino')
+        lista.setAttribute('status', 'aberto')
+        lista.removeAttribute('destino') //método para remover atributos
+        console.log(lista.dataset)
     </script>
 </body>
 

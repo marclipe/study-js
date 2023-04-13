@@ -15,7 +15,29 @@
         <img src='http://files.cod3r.com.br/curso-web/logo-estreita.png' alt='logo'>
     </div>
     <script>
-        // ...
+        const img = document.querySelector('img')
+        //Acesso o atributo a partir de uma string 
+        console.log('getAtrribute', img.getAttribute('src'))
+        //Acesso colocando o nome do atributo dentro do próprio código
+        console.log('src', img.src)
+        //Usando a anotação de colchetes
+        console.log('["src"]', img['src']) //["src"] http://files.cod3r.com.br/curso-web/logo-estreita.png
+
+        console.log('alt', img.alt) //alt logo 
+
+        console.log('Elemento "img"...........')
+        console.log('NodeType', img.nodeType)
+        console.log('NodeName', img.nodeName)
+
+        const src = img.getAttribute('src')
+        console.log('Atributo "src"...............')
+        console.log('NodeType', src.nodeType)
+
+        const link = document.querySelector('a')
+        console.log('Elemento "a".................')
+        console.log('href', link.href) //acesso ao href
+        console.log('firstChild.nodeType', link.firstChild.nodeType)
+        link.firstChild.nodeValue = 'Novo Texto' //Altera o valor do link
     </script>
 </body>
 
